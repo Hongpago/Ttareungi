@@ -1,9 +1,12 @@
 import datetime
 import urllib.parse
 
+import folium
 import pandas as pd
 import plotly
 import plotly.graph_objects as go
+from folium import plugins
+from folium.plugins import MarkerCluster
 from pymongo import MongoClient
 
 host = "34.64.209.3"
@@ -43,7 +46,7 @@ pipe2 = [{'$group': {'_id': "$sub_date", 'total': {'$sum': "$sub_num"}}},
 pipe3 = [{'$group': {'_id': "$rental_office_id",
                      'avg': {'$avg': "$number_of_rentals"},
                      "office_name": {"$first": "$rental_office_name"}}},
-         {'$project': {'_id': 0, 'office_name': "$office_name", "avg": 1}}, {'$sort': {'avg': -1}}]
+         {'$project': {'_id': 0, 'office_id': "$_id", 'office_name': "$office_name", "avg": 1}}, {'$sort': {'avg': -1}}]
 
 pipe4 = [{'$group': {'_id': {"year": {"$substr": ["$rental_date", 0, 4]}, "month": {"$substr": ["$rental_date", 5, 2]},
                              "rental": "$rental_office_id"}, "count": {'$sum': 1},
@@ -90,6 +93,7 @@ office_id_avg = []
 rental_return_avg_sub = dict()
 # print(new_users_by_month)
 office_locations = []
+office_avg_month = dict()
 # -------------------------------------------------------------------------------------------
 
 for data in list(use_avg_by_rental_office):
@@ -116,6 +120,7 @@ for data in list(new_users_by_month):
 for data in list(use_avg_by_rental_office):
     office_name.append(data['office_name'])
     avgs.append(data['avg'])
+    office_avg_month[data['office_id']] = data['avg']
 
 for data in list(rental_avg_by_rental_office):
     rental_office_id.append(data['_id'])
@@ -136,7 +141,7 @@ for data in list(return_avg_by_rental_office):
 
 for key, value in rental_return_avg_sub.items():
     print("key", key, value)
-    if type(key) != str :
+    if type(key) != str:
         office_id_avg.append(value)
         office_id.append(key)
 
@@ -172,8 +177,8 @@ for data in list(use_avg_by_rental_office):
 #
 # fig3.show()
 
-print("id",office_name)
-print("id",avgs)
+print("id", office_name)
+print("id", avgs)
 data4 = [go.Bar(
     x=office_name,
     y=avgs
@@ -208,23 +213,58 @@ fig4 = go.Figure(data=data4)
 ## df = pd.read_csv('data/rental_office.csv', encoding='utf-8')
 ## df.head()
 ## geo_data = 'data/seoul_geo.json'
-## 서울중심
-# center = [37.541, 126.986]
-# m = folium.Map(location=center, zoom_start=10)
-## 마커 클러스터 사용
-# marker_cluster = MarkerCluster().add_to(m)
-# for i in df.index[:]:
-#     # print(df.loc[i, 'latitude'], "and", (df.loc[i, 'latitude']))
-#     # print(df.loc[i, 'longitude'], "and", (df.loc[i, 'longitude']))
-#     # print(df.loc[i, 'rental_office_name'])
-#     # print(i)
-#     # 위도 경도 값 없을시 건너뛰기
-#     if (df.loc[i, 'latitude']) and (df.loc[i, 'longitude']):
-#         folium.Marker(
-#             location=[df.loc[i, 'latitude'], df.loc[i, 'longitude']],
-#             popup=df.loc[i, 'rental_office_name'],
-#             icon=folium.Icon(color='cadetblue', icon='ok')
-#         ).add_to(marker_cluster)
+# 서울중심
+center = [37.541, 126.986]
+m = folium.Map(location=center, zoom_start=10)
+# 마커 클러스터 사용
+marker_cluster = MarkerCluster().add_to(m)
+# 그룹만들기
+# fg = folium.FeatureGroup(name='groups')
+# m.add_child(fg)
+g1 = plugins.FeatureGroupSubGroup(marker_cluster, 'group1')
+m.add_child(g1)
+
+g2 = plugins.FeatureGroupSubGroup(marker_cluster, 'group2')
+m.add_child(g2)
+
+
+m.fit_bounds([[37.443036, 126.856744], [37.646073, 127.100117]])
+##office_avg_month[df.loc[i, 'rental_office_id']]
+for i in df.index[:]:
+    # print(df.loc[i, 'latitude'], "and", (df.loc[i, 'latitude']))
+    # print(df.loc[i, 'longitude'], "and", (df.loc[i, 'longitude']))
+    # print(df.loc[i, 'rental_office_name'])
+    # print(i)
+    # 위도 경도 값 없을시 건너뛰기
+    if (df.loc[i, 'latitude']) and (df.loc[i, 'longitude']):
+        install_date = rental_office_install_date[df.loc[i, 'rental_office_id']]
+        use_avg = use_avg_by_install_date[install_date]
+        avg_month = office_avg_month[df.loc[i, 'rental_office_id']]
+
+        rental_office_explain = f"대여소 명 : #{df.loc[i, 'rental_office_name']}" \
+                                f"\n월 평균 대여량 : #{avg_month}" \
+                                f"\n설치 시기 : #{install_date}" \
+                                f"\n같은 설치시기인 대여소 평균 대여량: #{use_avg}" \
+                                f"\n대여량 반납량 차이: #{rental_return_avg_sub[df.loc[i, 'rental_office_id']]}"
+
+        if avg_month < use_avg:
+            folium.Marker(
+                location=[df.loc[i, 'latitude'], df.loc[i, 'longitude']],
+                popup=rental_office_explain,
+                icon=folium.Icon(color='cadetblue', icon='ok')
+            ).add_to(g1)
+        else:
+            folium.Marker(
+                location=[df.loc[i, 'latitude'], df.loc[i, 'longitude']],
+                popup=rental_office_explain,
+                icon=folium.Icon(color='lightgreen', icon='ok')
+            ).add_to(g2)
+
+        # folium.Marker(
+        #     location=[df.loc[i, 'latitude'], df.loc[i, 'longitude']],
+        #     popup=rental_office_explain,
+        #     icon=folium.Icon(color='cadetblue', icon='ok')
+        # ).add_to(marker_cluster)
 
 ## 마커 표시
 # for i in df.index[:]:
