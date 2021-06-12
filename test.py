@@ -9,15 +9,12 @@ from folium import plugins
 from folium.plugins import MarkerCluster
 from pymongo import MongoClient
 
-host = "34.64.209.3"
-port = "27017"
+host = "localhost"
+port = "17017"
 username = urllib.parse.quote_plus('admin')
 password = urllib.parse.quote_plus('admin')
-mongo = MongoClient('mongodb://%s:%s@34.64.209.3:27017',
-                    username='admin',
-                    password='admin',
-                    authSource='Ttareungi')
-# mongo = MongoClient(host, int(port))
+# mongo = MongoClient('mongodb://%s:%s@서버ip:27017')
+mongo = MongoClient(host, int(port))
 database = mongo.Ttareungi
 print(database)
 print(plotly.__version__)
@@ -37,8 +34,9 @@ print(plotly.__version__)
 # db.rental_history.aggregate([{$match:{}},{$group:{_id:{"year":{"$substr":["$rental_date",0,4]},"month":{"$substr":["$rental_date",5,2]},"rental":"$rental_office_id"},"count":{$sum:1},"name":{$first:"$rental_office_name"}}},{$group:{_id:"$_id.rental","avg":{$avg:"$count"}}},{$sort:{_id:1}}])
 # db.rental_history.aggregate([{$group:{_id:{"year":{"$substr":["$return_date",0,4]},"month":{"$substr":["$return_date",5,2]},"return":"$return_office_id"},"count":{$sum:1},"name":{$first:"$rental_office_name"}}},{$group:{_id:"$_id.return","avg":{$avg:"$count"}}},{$sort:{_id:1}}])
 
-pipe1 = [{'$group': {'_id': "$rental_date(month)", 'total': {'$sum': "$number_of_rentals"}}},
-         {'$project': {'_id': 0, 'date': "$_id", 'total': 1}}, {'$sort': {'date': -1}}]
+pipe1 = [{'$group': {'_id': "$rental_date(month)", 'total': {'$sum': "$number_of_rentals"},
+                     'office_id': {'$first': "$rental_office_id"}}},
+         {'$project': {'_id': 0, 'date': "$_id", 'total': 1, 'office_id': 1}}, {'$sort': {'date': -1}}]
 
 pipe2 = [{'$group': {'_id': "$sub_date", 'total': {'$sum': "$sub_num"}}},
          {'$project': {'_id': 0, 'date': "$_id", 'total': 1}}, {'$sort': {'registers': 1}}]
@@ -67,10 +65,10 @@ location_query = {'rental_office_id': 1, 'rental_office_name': 1, 'latitude': 1,
 use_by_month = database.rental_office_usage.aggregate(pipe1)
 new_users_by_month = database.new_sub.aggregate(pipe2)
 use_avg_by_rental_office = database.rental_office_usage.aggregate(pipe3)
-rental_avg_by_rental_office = database.rental_history.aggregate(pipe4)
-return_avg_by_rental_office = database.rental_history.aggregate(pipe5)
-install_date_of_rental_office = database.rental_office_install_date.find({}, install_date_query)
-rental_office_location = database.rental_office_install_date.find({}, location_query)
+# rental_avg_by_rental_office = database.rental_history.aggregate(pipe4)
+# return_avg_by_rental_office = database.rental_history.aggregate(pipe5)
+install_date_of_rental_office = database.rental_office.find({}, install_date_query)
+rental_office_location = database.rental_office.find({}, location_query)
 
 rental_office_install_date = dict(
     (data['rental_office_id'], data['installation_date']) for data in install_date_of_rental_office)
@@ -85,6 +83,7 @@ count_by_install_date = dict()
 dates = []
 totals = []
 date = []
+pipe1_office_id = []
 registers_total = []
 office_name = []
 avgs = []
@@ -98,49 +97,51 @@ office_avg_month = dict()
 
 for data in list(use_avg_by_rental_office):
     rental_office_id = data['office_id']
-    install_date = rental_office_install_date[rental_office_id]
-    if install_date is None:
+
+    install_date = rental_office_install_date.get(rental_office_id, 0)
+    if install_date == 0 or install_date is None:
         continue
+
     year = install_date[:4]
     count_by_install_date[year] = count_by_install_date.get(year, 0) + 1
-    use_avg_by_install_date[year] = use_avg_by_install_date(year, 0) + data["avg"]
+    use_avg_by_install_date[year] = use_avg_by_install_date.get(year, 0) + data["avg"]
 
-for year in list("2015", "2016", "2017", "2018", "2019", "2020", "2021"):
+    office_name.append(data['office_name'])
+    avgs.append(data['avg'])
+    office_avg_month[rental_office_id] = data['avg']
+
+for year in ["2015", "2016", "2017", "2018", "2019", "2020", "2021"]:
     if use_avg_by_install_date.get(year):
         use_avg_by_install_date[year] = use_avg_by_install_date[year] // count_by_install_date[year]
 
 for data in list(use_by_month):
-    totals.append(data['total'])
+    totals.append(data['total'] / 10000)
     dates.append(datetime.datetime(data['date'] // 100, data['date'] % 100, 1))
+    pipe1_office_id.append(data['office_id'])
 
 for data in list(new_users_by_month):
     registers_total.append(data['total'])
     date.append(datetime.datetime(data['date'] // 100, data['date'] % 100, 1))
 
-for data in list(use_avg_by_rental_office):
-    office_name.append(data['office_name'])
-    avgs.append(data['avg'])
-    office_avg_month[data['office_id']] = data['avg']
-
-for data in list(rental_avg_by_rental_office):
-    rental_office_id.append(data['_id'])
-    avgs.append(data['avg'])
-    rental_return_avg_sub[data['_id']] = data['avg']
-
-for data in list(return_avg_by_rental_office):
-    # return_office_id.append(data['_id'])
-    # avgs.append(data['avg'])
-    print("ID", data['_id'])
-    if rental_return_avg_sub.get(data['_id']):
-        print(rental_return_avg_sub[data['_id']], " - ", data['avg'], " = ")
-        sub = rental_return_avg_sub[data['_id']] - data['avg']
-        print("sub", sub)
-        rental_return_avg_sub[data['_id']] = sub
-    else:
-        rental_return_avg_sub[data['_id']] = -data['avg']
+# for data in list(rental_avg_by_rental_office):
+#     rental_office_id.append(data['_id'])
+#     avgs.append(data['avg'])
+#     rental_return_avg_sub[data['_id']] = data['avg']
+#
+# for data in list(return_avg_by_rental_office):
+#     # return_office_id.append(data['_id'])
+#     # avgs.append(data['avg'])
+#     print("ID", data['_id'])
+#     if rental_return_avg_sub.get(data['_id']):
+#         print(rental_return_avg_sub[data['_id']], " - ", data['avg'], " = ")
+#         sub = rental_return_avg_sub[data['_id']] - data['avg']
+#         print("sub", sub)
+#         rental_return_avg_sub[data['_id']] = sub
+#     else:
+#         rental_return_avg_sub[data['_id']] = -data['avg']
 
 for key, value in rental_return_avg_sub.items():
-    print("key", key, value)
+    #print("key", key, value)
     if type(key) != str:
         office_id_avg.append(value)
         office_id.append(key)
@@ -151,6 +152,13 @@ for data in list(use_avg_by_rental_office):
     avgs.append(data['avg'])
 
 # -------------------------------------------------------------------------------------------
+# fig = go.Figure(data=[go.Scatter(
+#     x=dates, y=pipe1_office_id,
+#     mode='markers',
+#     marker_size=totals
+# )])
+# fig.show()
+
 # data1 = [go.Bar(
 #     x=dates,
 #     y=totals
@@ -176,9 +184,7 @@ for data in list(use_avg_by_rental_office):
 # fig3 = go.Figure(data=data3)
 #
 # fig3.show()
-
-print("id", office_name)
-print("id", avgs)
+#
 data4 = [go.Bar(
     x=office_name,
     y=avgs
@@ -227,25 +233,24 @@ m.add_child(g1)
 g2 = plugins.FeatureGroupSubGroup(marker_cluster, 'group2')
 m.add_child(g2)
 
-
 m.fit_bounds([[37.443036, 126.856744], [37.646073, 127.100117]])
-##office_avg_month[df.loc[i, 'rental_office_id']]
+#office_avg_month[df.loc[i, 'rental_office_id']]
 for i in df.index[:]:
-    # print(df.loc[i, 'latitude'], "and", (df.loc[i, 'latitude']))
+    # print(df.loc[i, latitude'], "and", (df.loc[i, 'latitude']))
     # print(df.loc[i, 'longitude'], "and", (df.loc[i, 'longitude']))
     # print(df.loc[i, 'rental_office_name'])
     # print(i)
     # 위도 경도 값 없을시 건너뛰기
     if (df.loc[i, 'latitude']) and (df.loc[i, 'longitude']):
         install_date = rental_office_install_date[df.loc[i, 'rental_office_id']]
-        use_avg = use_avg_by_install_date[install_date]
-        avg_month = office_avg_month[df.loc[i, 'rental_office_id']]
+        use_avg = use_avg_by_install_date[install_date[:4]]
+        avg_month = office_avg_month.get(df.loc[i, 'rental_office_id'], 0)
 
-        rental_office_explain = f"대여소 명 : #{df.loc[i, 'rental_office_name']}" \
-                                f"\n월 평균 대여량 : #{avg_month}" \
-                                f"\n설치 시기 : #{install_date}" \
-                                f"\n같은 설치시기인 대여소 평균 대여량: #{use_avg}" \
-                                f"\n대여량 반납량 차이: #{rental_return_avg_sub[df.loc[i, 'rental_office_id']]}"
+        rental_office_explain = f"대여소 명 : {df.loc[i, 'rental_office_name']}" \
+                                f"\n월 평균 대여량 : {avg_month}" \
+                                f"\n설치 시기 : {install_date}" \
+                                f"\n같은 설치시기인 대여소 평균 대여량: {use_avg}" \
+                                f"\n대여량 반납량 차이: {rental_return_avg_sub.get(df.loc[i, 'rental_office_id'],0)}"
 
         if avg_month < use_avg:
             folium.Marker(
@@ -265,7 +270,7 @@ for i in df.index[:]:
         #     popup=rental_office_explain,
         #     icon=folium.Icon(color='cadetblue', icon='ok')
         # ).add_to(marker_cluster)
-
+folium.LayerControl(collapsed=False).add_to(m)
 ## 마커 표시
 # for i in df.index[:]:
 #     if not pd.isna(df.loc[i, '위도']) and not pd.isna(df.loc[i, '경도']):
