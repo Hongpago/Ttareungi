@@ -54,11 +54,7 @@ pipe5 = [{'$group': {'_id': {"year": {"$substr": ["$return_date", 0, 4]}, "month
                              "return": "$return_office_id"}, "count": {"$sum": 1},
                      "name": {"$first": "$rental_office_name"}}},
          {'$group': {'_id': "$_id.return", "avg": {'$avg': "$count"}}}, {'$sort': {'_id': 1}}]
-
-rental_num_each_rental_office_query = [{'$group': {'_id': "$rental_office_id",
-                                                   'rental_num': {'$sum': "$number_of_rentals"}}},
-                                       {'$sort': {'_id': 1}}]
-
+# pip3꺼를 설치시기 같은 애들 평균내서 년도별 평균 내기
 install_date_query = {'rental_office_id': 1, 'installation_date': 1}
 
 location_query = {'rental_office_id': 1, 'rental_office_name': 1, 'latitude': 1, 'longitude': 1}
@@ -70,27 +66,19 @@ new_users_by_month = database.new_sub.aggregate(pipe2)
 use_avg_by_rental_office = database.rental_office_usage.aggregate(pipe3)
 rental_avg_by_rental_office = database.rental_history.aggregate(pipe4)
 return_avg_by_rental_office = database.rental_history.aggregate(pipe5)
-rental_num_each_rental_office = database.rental_office_usage.aggregate(rental_num_each_rental_office_query)
-install_date_of_rental_office = database.rental_office.find({}, install_date_query)
-rental_office_location = database.rental_office.find({}, location_query)
+install_date_of_rental_office = database.rental_office_install_date.find({}, install_date_query)
+rental_office_location = database.rental_office_install_date.find({}, location_query)
 
-rental_office = dict((data['rental_office_id'], data['installation_date']) for data in install_date_of_rental_office)
+rental_office_install_date = dict(
+    (data['rental_office_id'], data['installation_date']) for data in install_date_of_rental_office)
 rental_office_rental_num = dict()
 
 # -------------------------------------------------------------------------------------------
 
 # print(rental_office)
 #
-# for data in rental_num_each_rental_office:
-#     print(data)
-#     print(data['_id'])
-#     rental_office_id = data["_id"]
-#     install_date = rental_office[rental_office_id]
-#     days = (2021 - install_date[:4])*12 + int(install_date[5:7])
-#     rental_office.update(rental_office_id=data["rental_num"]/days)
-#
-# print(rental_office)
-
+use_avg_by_install_date = dict()
+count_by_install_date = dict()
 dates = []
 totals = []
 date = []
@@ -103,6 +91,19 @@ rental_return_avg_sub = dict()
 # print(new_users_by_month)
 office_locations = []
 # -------------------------------------------------------------------------------------------
+
+for data in list(use_avg_by_rental_office):
+    rental_office_id = data['office_id']
+    install_date = rental_office_install_date[rental_office_id]
+    if install_date is None:
+        continue
+    year = install_date[:4]
+    count_by_install_date[year] = count_by_install_date.get(year, 0) + 1
+    use_avg_by_install_date[year] = use_avg_by_install_date(year, 0) + data["avg"]
+
+for year in list("2015", "2016", "2017", "2018", "2019", "2020", "2021"):
+    if use_avg_by_install_date.get(year):
+        use_avg_by_install_date[year] = use_avg_by_install_date[year] // count_by_install_date[year]
 
 for data in list(use_by_month):
     totals.append(data['total'])
@@ -117,8 +118,8 @@ for data in list(use_avg_by_rental_office):
     avgs.append(data['avg'])
 
 for data in list(rental_avg_by_rental_office):
-    # rental_office_id.append(data['_id'])
-    # avgs.append(data['avg'])
+    rental_office_id.append(data['_id'])
+    avgs.append(data['avg'])
     rental_return_avg_sub[data['_id']] = data['avg']
 
 for data in list(return_avg_by_rental_office):
@@ -180,7 +181,7 @@ data4 = [go.Bar(
 
 fig4 = go.Figure(data=data4)
 
-fig4.show()
+# fig4.show()
 
 # pipe = [{'$group': {'_id': "$가입일자", 'total': {'$sum': "$가입 수"}}},
 #         {'$project': {'_id': 0, 'registers': "$_id", 'total': 1}}, {'$sort': {'registers': 1}}]
@@ -257,7 +258,7 @@ fig4.show()
 #     legend_name='자치구',
 # ).add_to(m)
 # html 파일로 저장
-# m.save("a.html")
+m.save("a.html")
 
 # -------------------------------------------------------------------------------------------
 
