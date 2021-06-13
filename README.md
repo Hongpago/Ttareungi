@@ -15,9 +15,11 @@ docker run -it -d --net mongo --name=mongo-router2 mongo mongos --configdb confi
 
 docker run -it -d --net mongo --name=mongo-node1 mongo mongod --shardsvr --replSet shard-replica-set --bind_ip_all
 docker run -it -d --net mongo --name=mongo-node2 mongo mongod --shardsvr --replSet shard-replica-set --bind_ip_all
+docker run -it -d --net mongo --name=mongo-node mongo mongod --shardsvr --replSet shard-replica-set --bind_ip_all
 
-docker run -it -d --net mongo --name=mongo-node3 mongo mongod --shardsvr --replSet shard-replica-set --bind_ip_all
-docker run -it -d --net mongo --name=mongo-node4 mongo mongod --shardsvr --replSet shard-replica-set --bind_ip_all
+docker run -it -d --net mongo --name=mongo-node3 mongo mongod --shardsvr --replSet second --bind_ip_all
+docker run -it -d --net mongo --name=mongo-node4 mongo mongod --shardsvr --replSet second --bind_ip_all
+docker run -it -d --net mongo --name=mongo-node5 mongo mongod --shardsvr --replSet second --bind_ip_all
 
 ###mongo1,2 에서
 
@@ -38,14 +40,25 @@ rs.initiate({
 _id: "shard-replica-set",
 members: [
 {_id: 0, host: "mongo-node1:27018"},
-{_id: 1, host: "mongo-node2:27018"}
+{_id: 1, host: "mongo-node2:27018"},
+{_id: 2, host: "mongo-node:27018"}
+]
+})
+
+mongo mongo-node3:27018
+rs.initiate({
+_id: "second",
+members: [
+{_id: 0, host: "mongo-node3:27018"},
+{_id: 1, host: "mongo-node4:27018"},
+{_id: 2, host: "mongo-node5:27018"}
 ]
 })
 
 ###mongo-router1,2에서
 mongo mongo-router1:27017
-sh.addShard("shard-replica-set/mongo-node1:27018,mongo-node2:27018")
-sh.addShard("shard-replica-set/mongo-node3:27018,mongo-node4:27018")
+sh.addShard("shard-replica-set/mongo-node1:27018,mongo-node2:27018,mongo-node:27018")
+sh.addShard("second/mongo-node3:27018,mongo-node4:27018,mongo-node5:27018")
 
 
 ##데이터
