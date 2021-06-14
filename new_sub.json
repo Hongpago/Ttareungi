@@ -1,0 +1,2297 @@
+{
+    "0": {
+        "sub_date": 201807,
+        "user_age": "AGE_001",
+        "sub_num": 6776
+    },
+    "1": {
+        "sub_date": 201807,
+        "user_age": "AGE_002",
+        "sub_num": 39365
+    },
+    "2": {
+        "sub_date": 201807,
+        "user_age": "AGE_003",
+        "sub_num": 11434
+    },
+    "3": {
+        "sub_date": 201807,
+        "user_age": "AGE_004",
+        "sub_num": 5967
+    },
+    "4": {
+        "sub_date": 201807,
+        "user_age": "AGE_005",
+        "sub_num": 2375
+    },
+    "5": {
+        "sub_date": 201807,
+        "user_age": "AGE_006",
+        "sub_num": 469
+    },
+    "6": {
+        "sub_date": 201807,
+        "user_age": "AGE_007",
+        "sub_num": 98
+    },
+    "7": {
+        "sub_date": 201808,
+        "user_age": "AGE_001",
+        "sub_num": 6016
+    },
+    "8": {
+        "sub_date": 201808,
+        "user_age": "AGE_002",
+        "sub_num": 34267
+    },
+    "9": {
+        "sub_date": 201808,
+        "user_age": "AGE_003",
+        "sub_num": 9145
+    },
+    "10": {
+        "sub_date": 201808,
+        "user_age": "AGE_004",
+        "sub_num": 4922
+    },
+    "11": {
+        "sub_date": 201808,
+        "user_age": "AGE_005",
+        "sub_num": 1962
+    },
+    "12": {
+        "sub_date": 201808,
+        "user_age": "AGE_006",
+        "sub_num": 377
+    },
+    "13": {
+        "sub_date": 201808,
+        "user_age": "AGE_007",
+        "sub_num": 79
+    },
+    "14": {
+        "sub_date": 201809,
+        "user_age": "AGE_001",
+        "sub_num": 10405
+    },
+    "15": {
+        "sub_date": 201809,
+        "user_age": "AGE_002",
+        "sub_num": 68603
+    },
+    "16": {
+        "sub_date": 201809,
+        "user_age": "AGE_003",
+        "sub_num": 19645
+    },
+    "17": {
+        "sub_date": 201809,
+        "user_age": "AGE_004",
+        "sub_num": 10497
+    },
+    "18": {
+        "sub_date": 201809,
+        "user_age": "AGE_006",
+        "sub_num": 753
+    },
+    "19": {
+        "sub_date": 201809,
+        "user_age": "AGE_007",
+        "sub_num": 136
+    },
+    "20": {
+        "sub_date": 201810,
+        "user_age": "AGE_001",
+        "sub_num": 7724
+    },
+    "21": {
+        "sub_date": 201810,
+        "user_age": "AGE_002",
+        "sub_num": 41954
+    },
+    "22": {
+        "sub_date": 201809,
+        "user_age": "AGE_005",
+        "sub_num": 4094
+    },
+    "23": {
+        "sub_date": 201810,
+        "user_age": "AGE_003",
+        "sub_num": 15213
+    },
+    "24": {
+        "sub_date": 201810,
+        "user_age": "AGE_004",
+        "sub_num": 8866
+    },
+    "25": {
+        "sub_date": 201810,
+        "user_age": "AGE_005",
+        "sub_num": 3222
+    },
+    "26": {
+        "sub_date": 201810,
+        "user_age": "AGE_006",
+        "sub_num": 587
+    },
+    "27": {
+        "sub_date": 201810,
+        "user_age": "AGE_007",
+        "sub_num": 112
+    },
+    "28": {
+        "sub_date": 201811,
+        "user_age": "AGE_001",
+        "sub_num": 4251
+    },
+    "29": {
+        "sub_date": 201811,
+        "user_age": "AGE_002",
+        "sub_num": 15466
+    },
+    "30": {
+        "sub_date": 201811,
+        "user_age": "AGE_003",
+        "sub_num": 5375
+    },
+    "31": {
+        "sub_date": 201811,
+        "user_age": "AGE_004",
+        "sub_num": 3373
+    },
+    "32": {
+        "sub_date": 201811,
+        "user_age": "AGE_005",
+        "sub_num": 1410
+    },
+    "33": {
+        "sub_date": 201811,
+        "user_age": "AGE_006",
+        "sub_num": 315
+    },
+    "34": {
+        "sub_date": 201812,
+        "user_age": "AGE_007",
+        "sub_num": 20
+    },
+    "35": {
+        "sub_date": 201901,
+        "user_age": "AGE_001",
+        "sub_num": 1701
+    },
+    "36": {
+        "sub_date": 201901,
+        "user_age": "AGE_002",
+        "sub_num": 6783
+    },
+    "37": {
+        "sub_date": 201901,
+        "user_age": "AGE_003",
+        "sub_num": 2261
+    },
+    "38": {
+        "sub_date": 201901,
+        "user_age": "AGE_004",
+        "sub_num": 1440
+    },
+    "39": {
+        "sub_date": 201901,
+        "user_age": "AGE_005",
+        "sub_num": 691
+    },
+    "40": {
+        "sub_date": 201901,
+        "user_age": "AGE_006",
+        "sub_num": 178
+    },
+    "41": {
+        "sub_date": 201901,
+        "user_age": "AGE_007",
+        "sub_num": 30
+    },
+    "42": {
+        "sub_date": 201902,
+        "user_age": "AGE_001",
+        "sub_num": 2287
+    },
+    "43": {
+        "sub_date": 201902,
+        "user_age": "AGE_002",
+        "sub_num": 10455
+    },
+    "44": {
+        "sub_date": 201902,
+        "user_age": "AGE_003",
+        "sub_num": 3091
+    },
+    "45": {
+        "sub_date": 201812,
+        "user_age": "AGE_001",
+        "sub_num": 2206
+    },
+    "46": {
+        "sub_date": 201902,
+        "user_age": "AGE_004",
+        "sub_num": 1982
+    },
+    "47": {
+        "sub_date": 201902,
+        "user_age": "AGE_005",
+        "sub_num": 955
+    },
+    "48": {
+        "sub_date": 201902,
+        "user_age": "AGE_006",
+        "sub_num": 197
+    },
+    "49": {
+        "sub_date": 201902,
+        "user_age": "AGE_007",
+        "sub_num": 27
+    },
+    "50": {
+        "sub_date": 201903,
+        "user_age": "AGE_001",
+        "sub_num": 3982
+    },
+    "51": {
+        "sub_date": 201903,
+        "user_age": "AGE_002",
+        "sub_num": 24424
+    },
+    "52": {
+        "sub_date": 201903,
+        "user_age": "AGE_003",
+        "sub_num": 7877
+    },
+    "53": {
+        "sub_date": 201903,
+        "user_age": "AGE_004",
+        "sub_num": 4972
+    },
+    "54": {
+        "sub_date": 201903,
+        "user_age": "AGE_005",
+        "sub_num": 2011
+    },
+    "55": {
+        "sub_date": 201812,
+        "user_age": "AGE_003",
+        "sub_num": 2077
+    },
+    "56": {
+        "sub_date": 201811,
+        "user_age": "AGE_007",
+        "sub_num": 51
+    },
+    "57": {
+        "sub_date": 201812,
+        "user_age": "AGE_005",
+        "sub_num": 495
+    },
+    "58": {
+        "sub_date": 201812,
+        "user_age": "AGE_002",
+        "sub_num": 5595
+    },
+    "59": {
+        "sub_date": 201812,
+        "user_age": "AGE_006",
+        "sub_num": 134
+    },
+    "60": {
+        "sub_date": 201904,
+        "user_age": "AGE_005",
+        "sub_num": 3573
+    },
+    "61": {
+        "sub_date": 201904,
+        "user_age": "AGE_006",
+        "sub_num": 788
+    },
+    "62": {
+        "sub_date": 201904,
+        "user_age": "AGE_002",
+        "sub_num": 52167
+    },
+    "63": {
+        "sub_date": 201904,
+        "user_age": "AGE_003",
+        "sub_num": 17630
+    },
+    "64": {
+        "sub_date": 201904,
+        "user_age": "AGE_004",
+        "sub_num": 9336
+    },
+    "65": {
+        "sub_date": 201903,
+        "user_age": "AGE_006",
+        "sub_num": 433
+    },
+    "66": {
+        "sub_date": 201903,
+        "user_age": "AGE_007",
+        "sub_num": 71
+    },
+    "67": {
+        "sub_date": 201812,
+        "user_age": "AGE_004",
+        "sub_num": 1249
+    },
+    "68": {
+        "sub_date": 201904,
+        "user_age": "AGE_007",
+        "sub_num": 109
+    },
+    "69": {
+        "sub_date": 201905,
+        "user_age": "AGE_001",
+        "sub_num": 14531
+    },
+    "70": {
+        "sub_date": 201905,
+        "user_age": "AGE_002",
+        "sub_num": 78615
+    },
+    "71": {
+        "sub_date": 201905,
+        "user_age": "AGE_003",
+        "sub_num": 24245
+    },
+    "72": {
+        "sub_date": 201905,
+        "user_age": "AGE_004",
+        "sub_num": 12825
+    },
+    "73": {
+        "sub_date": 201905,
+        "user_age": "AGE_005",
+        "sub_num": 5327
+    },
+    "74": {
+        "sub_date": 201905,
+        "user_age": "AGE_006",
+        "sub_num": 1010
+    },
+    "75": {
+        "sub_date": 201905,
+        "user_age": "AGE_007",
+        "sub_num": 167
+    },
+    "76": {
+        "sub_date": 201904,
+        "user_age": "AGE_001",
+        "sub_num": 6960
+    },
+    "77": {
+        "sub_date": 201801,
+        "user_age": "~10대",
+        "sub_num": 102
+    },
+    "78": {
+        "sub_date": 201801,
+        "user_age": "~10대",
+        "sub_num": 109
+    },
+    "79": {
+        "sub_date": 201801,
+        "user_age": "20대",
+        "sub_num": 965
+    },
+    "80": {
+        "sub_date": 201801,
+        "user_age": "20대",
+        "sub_num": 1163
+    },
+    "81": {
+        "sub_date": 201801,
+        "user_age": "30대",
+        "sub_num": 651
+    },
+    "82": {
+        "sub_date": 201801,
+        "user_age": "40대",
+        "sub_num": 225
+    },
+    "83": {
+        "sub_date": 201801,
+        "user_age": "40대",
+        "sub_num": 489
+    },
+    "84": {
+        "sub_date": 201801,
+        "user_age": "50대",
+        "sub_num": 119
+    },
+    "85": {
+        "sub_date": 201801,
+        "user_age": "50대",
+        "sub_num": 222
+    },
+    "86": {
+        "sub_date": 201801,
+        "user_age": "30대",
+        "sub_num": 387
+    },
+    "87": {
+        "sub_date": 201801,
+        "user_age": "60대",
+        "sub_num": 78
+    },
+    "88": {
+        "sub_date": 201801,
+        "user_age": "60대",
+        "sub_num": 23
+    },
+    "89": {
+        "sub_date": 201801,
+        "user_age": "70대~",
+        "sub_num": 11
+    },
+    "90": {
+        "sub_date": 201801,
+        "user_age": "70대~",
+        "sub_num": 8
+    },
+    "91": {
+        "sub_date": 201802,
+        "user_age": "~10대",
+        "sub_num": 154
+    },
+    "92": {
+        "sub_date": 201802,
+        "user_age": "~10대",
+        "sub_num": 194
+    },
+    "93": {
+        "sub_date": 201802,
+        "user_age": "20대",
+        "sub_num": 1556
+    },
+    "94": {
+        "sub_date": 201802,
+        "user_age": "20대",
+        "sub_num": 1655
+    },
+    "95": {
+        "sub_date": 201802,
+        "user_age": "30대",
+        "sub_num": 580
+    },
+    "96": {
+        "sub_date": 201802,
+        "user_age": "30대",
+        "sub_num": 854
+    },
+    "97": {
+        "sub_date": 201802,
+        "user_age": "40대",
+        "sub_num": 581
+    },
+    "98": {
+        "sub_date": 201802,
+        "user_age": "50대",
+        "sub_num": 165
+    },
+    "99": {
+        "sub_date": 201802,
+        "user_age": "50대",
+        "sub_num": 267
+    },
+    "100": {
+        "sub_date": 201802,
+        "user_age": "40대",
+        "sub_num": 312
+    },
+    "101": {
+        "sub_date": 201802,
+        "user_age": "60대",
+        "sub_num": 40
+    },
+    "102": {
+        "sub_date": 201802,
+        "user_age": "60대",
+        "sub_num": 74
+    },
+    "103": {
+        "sub_date": 201802,
+        "user_age": "70대~",
+        "sub_num": 15
+    },
+    "104": {
+        "sub_date": 201802,
+        "user_age": "70대~",
+        "sub_num": 15
+    },
+    "105": {
+        "sub_date": 201803,
+        "user_age": "~10대",
+        "sub_num": 589
+    },
+    "106": {
+        "sub_date": 201803,
+        "user_age": "~10대",
+        "sub_num": 447
+    },
+    "107": {
+        "sub_date": 201803,
+        "user_age": "20대",
+        "sub_num": 8720
+    },
+    "108": {
+        "sub_date": 201803,
+        "user_age": "20대",
+        "sub_num": 6881
+    },
+    "109": {
+        "sub_date": 201803,
+        "user_age": "30대",
+        "sub_num": 2825
+    },
+    "110": {
+        "sub_date": 201803,
+        "user_age": "30대",
+        "sub_num": 3447
+    },
+    "111": {
+        "sub_date": 201803,
+        "user_age": "40대",
+        "sub_num": 2269
+    },
+    "112": {
+        "sub_date": 201803,
+        "user_age": "40대",
+        "sub_num": 1383
+    },
+    "113": {
+        "sub_date": 201803,
+        "user_age": "50대",
+        "sub_num": 618
+    },
+    "114": {
+        "sub_date": 201804,
+        "user_age": "20대",
+        "sub_num": 14916
+    },
+    "115": {
+        "sub_date": 201804,
+        "user_age": "20대",
+        "sub_num": 11378
+    },
+    "116": {
+        "sub_date": 201804,
+        "user_age": "30대",
+        "sub_num": 5276
+    },
+    "117": {
+        "sub_date": 201804,
+        "user_age": "30대",
+        "sub_num": 6134
+    },
+    "118": {
+        "sub_date": 201804,
+        "user_age": "40대",
+        "sub_num": 2254
+    },
+    "119": {
+        "sub_date": 201804,
+        "user_age": "40대",
+        "sub_num": 3340
+    },
+    "120": {
+        "sub_date": 201804,
+        "user_age": "50대",
+        "sub_num": 1096
+    },
+    "121": {
+        "sub_date": 201804,
+        "user_age": "50대",
+        "sub_num": 1356
+    },
+    "122": {
+        "sub_date": 201804,
+        "user_age": "60대",
+        "sub_num": 182
+    },
+    "123": {
+        "sub_date": 201804,
+        "user_age": "60대",
+        "sub_num": 335
+    },
+    "124": {
+        "sub_date": 201804,
+        "user_age": "70대~",
+        "sub_num": 72
+    },
+    "125": {
+        "sub_date": 201804,
+        "user_age": "70대~",
+        "sub_num": 74
+    },
+    "126": {
+        "sub_date": 201805,
+        "user_age": "~10대",
+        "sub_num": 1576
+    },
+    "127": {
+        "sub_date": 201805,
+        "user_age": "~10대",
+        "sub_num": 1065
+    },
+    "128": {
+        "sub_date": 201805,
+        "user_age": "20대",
+        "sub_num": 18746
+    },
+    "129": {
+        "sub_date": 201805,
+        "user_age": "20대",
+        "sub_num": 14923
+    },
+    "130": {
+        "sub_date": 201805,
+        "user_age": "30대",
+        "sub_num": 6889
+    },
+    "131": {
+        "sub_date": 201804,
+        "user_age": "~10대",
+        "sub_num": 728
+    },
+    "132": {
+        "sub_date": 201803,
+        "user_age": "50대",
+        "sub_num": 1067
+    },
+    "133": {
+        "sub_date": 201803,
+        "user_age": "60대",
+        "sub_num": 137
+    },
+    "134": {
+        "sub_date": 201803,
+        "user_age": "60대",
+        "sub_num": 266
+    },
+    "135": {
+        "sub_date": 201803,
+        "user_age": "70대~",
+        "sub_num": 47
+    },
+    "136": {
+        "sub_date": 201803,
+        "user_age": "70대~",
+        "sub_num": 54
+    },
+    "137": {
+        "sub_date": 201804,
+        "user_age": "~10대",
+        "sub_num": 905
+    },
+    "138": {
+        "sub_date": 201805,
+        "user_age": "30대",
+        "sub_num": 8212
+    },
+    "139": {
+        "sub_date": 201805,
+        "user_age": "40대",
+        "sub_num": 3147
+    },
+    "140": {
+        "sub_date": 201805,
+        "user_age": "40대",
+        "sub_num": 4251
+    },
+    "141": {
+        "sub_date": 201805,
+        "user_age": "50대",
+        "sub_num": 1335
+    },
+    "142": {
+        "sub_date": 201805,
+        "user_age": "60대",
+        "sub_num": 238
+    },
+    "143": {
+        "sub_date": 201805,
+        "user_age": "70대~",
+        "sub_num": 3
+    },
+    "144": {
+        "sub_date": 201805,
+        "user_age": "50대",
+        "sub_num": 1610
+    },
+    "145": {
+        "sub_date": 201805,
+        "user_age": "70대~",
+        "sub_num": 90
+    },
+    "146": {
+        "sub_date": 201805,
+        "user_age": "60대",
+        "sub_num": 377
+    },
+    "147": {
+        "sub_date": 201806,
+        "user_age": "30대",
+        "sub_num": 5025
+    },
+    "148": {
+        "sub_date": 201806,
+        "user_age": "40대",
+        "sub_num": 3226
+    },
+    "149": {
+        "sub_date": 201806,
+        "user_age": "20대",
+        "sub_num": 13434
+    },
+    "150": {
+        "sub_date": 201806,
+        "user_age": "50대",
+        "sub_num": 998
+    },
+    "151": {
+        "sub_date": 201806,
+        "user_age": "50대",
+        "sub_num": 1180
+    },
+    "152": {
+        "sub_date": 201806,
+        "user_age": "60대",
+        "sub_num": 278
+    },
+    "153": {
+        "sub_date": 201806,
+        "user_age": "70대~",
+        "sub_num": 28601
+    },
+    "154": {
+        "sub_date": 201806,
+        "user_age": "70대~",
+        "sub_num": 90
+    },
+    "155": {
+        "sub_date": 201806,
+        "user_age": "60대",
+        "sub_num": 187
+    },
+    "156": {
+        "sub_date": 201806,
+        "user_age": "30대",
+        "sub_num": 6479
+    },
+    "157": {
+        "sub_date": 201806,
+        "user_age": "70대~",
+        "sub_num": 79
+    },
+    "158": {
+        "sub_date": 201806,
+        "user_age": "40대",
+        "sub_num": 2182
+    },
+    "159": {
+        "sub_date": 201805,
+        "user_age": "70대~",
+        "sub_num": 95
+    },
+    "160": {
+        "sub_date": 201806,
+        "user_age": "~10대",
+        "sub_num": 1088
+    },
+    "161": {
+        "sub_date": 201806,
+        "user_age": "~10대",
+        "sub_num": 852
+    },
+    "162": {
+        "sub_date": 201806,
+        "user_age": "20대",
+        "sub_num": 11074
+    },
+    "163": {
+        "sub_date": 201906,
+        "user_age": "AGE_007",
+        "sub_num": 107798
+    },
+    "164": {
+        "sub_date": 201907,
+        "user_age": "AGE_007",
+        "sub_num": 79457
+    },
+    "165": {
+        "sub_date": 201908,
+        "user_age": "AGE_003",
+        "sub_num": 1
+    },
+    "166": {
+        "sub_date": 201908,
+        "user_age": "AGE_007",
+        "sub_num": 73897
+    },
+    "167": {
+        "sub_date": 201910,
+        "user_age": "AGE_001",
+        "sub_num": 10507
+    },
+    "168": {
+        "sub_date": 201910,
+        "user_age": "AGE_003",
+        "sub_num": 17275
+    },
+    "169": {
+        "sub_date": 201910,
+        "user_age": "AGE_004",
+        "sub_num": 10145
+    },
+    "170": {
+        "sub_date": 201909,
+        "user_age": "AGE_007",
+        "sub_num": 91846
+    },
+    "171": {
+        "sub_date": 201910,
+        "user_age": "AGE_002",
+        "sub_num": 34774
+    },
+    "172": {
+        "sub_date": 201910,
+        "user_age": "AGE_005",
+        "sub_num": 4052
+    },
+    "173": {
+        "sub_date": 201911,
+        "user_age": "AGE_002",
+        "sub_num": 7910
+    },
+    "174": {
+        "sub_date": 201911,
+        "user_age": "AGE_002",
+        "sub_num": 7085
+    },
+    "175": {
+        "sub_date": 201911,
+        "user_age": "AGE_003",
+        "sub_num": 4551
+    },
+    "176": {
+        "sub_date": 201911,
+        "user_age": "AGE_004",
+        "sub_num": 1892
+    },
+    "177": {
+        "sub_date": 201911,
+        "user_age": "AGE_004",
+        "sub_num": 3058
+    },
+    "178": {
+        "sub_date": 201911,
+        "user_age": "AGE_003",
+        "sub_num": 2962
+    },
+    "179": {
+        "sub_date": 201911,
+        "user_age": "AGE_005",
+        "sub_num": 791
+    },
+    "180": {
+        "sub_date": 201911,
+        "user_age": "AGE_005",
+        "sub_num": 1406
+    },
+    "181": {
+        "sub_date": 201911,
+        "user_age": "AGE_006",
+        "sub_num": 118
+    },
+    "182": {
+        "sub_date": 201911,
+        "user_age": "AGE_006",
+        "sub_num": 360
+    },
+    "183": {
+        "sub_date": 201911,
+        "user_age": "AGE_007",
+        "sub_num": 13
+    },
+    "184": {
+        "sub_date": 201910,
+        "user_age": "AGE_008",
+        "sub_num": 12
+    },
+    "185": {
+        "sub_date": 201910,
+        "user_age": "AGE_007",
+        "sub_num": 6535
+    },
+    "186": {
+        "sub_date": 201910,
+        "user_age": "AGE_006",
+        "sub_num": 791
+    },
+    "187": {
+        "sub_date": 201911,
+        "user_age": "AGE_007",
+        "sub_num": 50
+    },
+    "188": {
+        "sub_date": 201911,
+        "user_age": "AGE_001",
+        "sub_num": 2944
+    },
+    "189": {
+        "sub_date": 201911,
+        "user_age": "AGE_008",
+        "sub_num": 5
+    },
+    "190": {
+        "sub_date": 201911,
+        "user_age": "AGE_008",
+        "sub_num": 13
+    },
+    "191": {
+        "sub_date": 201911,
+        "user_age": "AGE_001",
+        "sub_num": 3357
+    },
+    "192": {
+        "sub_date": 202007,
+        "user_age": "AGE_001",
+        "sub_num": 5279
+    },
+    "193": {
+        "sub_date": 202007,
+        "user_age": "AGE_002",
+        "sub_num": 22530
+    },
+    "194": {
+        "sub_date": 202007,
+        "user_age": "AGE_002",
+        "sub_num": 21076
+    },
+    "195": {
+        "sub_date": 202007,
+        "user_age": "AGE_003",
+        "sub_num": 8002
+    },
+    "196": {
+        "sub_date": 202007,
+        "user_age": "AGE_003",
+        "sub_num": 9853
+    },
+    "197": {
+        "sub_date": 202007,
+        "user_age": "AGE_004",
+        "sub_num": 5576
+    },
+    "198": {
+        "sub_date": 202007,
+        "user_age": "AGE_005",
+        "sub_num": 2871
+    },
+    "199": {
+        "sub_date": 202007,
+        "user_age": "AGE_001",
+        "sub_num": 5249
+    },
+    "200": {
+        "sub_date": 202007,
+        "user_age": "AGE_004",
+        "sub_num": 6558
+    },
+    "201": {
+        "sub_date": 202007,
+        "user_age": "AGE_007",
+        "sub_num": 51
+    },
+    "202": {
+        "sub_date": 202007,
+        "user_age": "AGE_007",
+        "sub_num": 121
+    },
+    "203": {
+        "sub_date": 202008,
+        "user_age": "AGE_001",
+        "sub_num": 2684
+    },
+    "204": {
+        "sub_date": 202008,
+        "user_age": "AGE_001",
+        "sub_num": 3076
+    },
+    "205": {
+        "sub_date": 202008,
+        "user_age": "AGE_002",
+        "sub_num": 10257
+    },
+    "206": {
+        "sub_date": 202008,
+        "user_age": "AGE_003",
+        "sub_num": 3598
+    },
+    "207": {
+        "sub_date": 202008,
+        "user_age": "AGE_003",
+        "sub_num": 4824
+    },
+    "208": {
+        "sub_date": 202007,
+        "user_age": "AGE_008",
+        "sub_num": 27
+    },
+    "209": {
+        "sub_date": 202008,
+        "user_age": "AGE_004",
+        "sub_num": 3062
+    },
+    "210": {
+        "sub_date": 202008,
+        "user_age": "AGE_005",
+        "sub_num": 1338
+    },
+    "211": {
+        "sub_date": 202008,
+        "user_age": "AGE_005",
+        "sub_num": 1602
+    },
+    "212": {
+        "sub_date": 202008,
+        "user_age": "AGE_006",
+        "sub_num": 259
+    },
+    "213": {
+        "sub_date": 202008,
+        "user_age": "AGE_004",
+        "sub_num": 2506
+    },
+    "214": {
+        "sub_date": 202008,
+        "user_age": "AGE_006",
+        "sub_num": 562
+    },
+    "215": {
+        "sub_date": 202008,
+        "user_age": "AGE_007",
+        "sub_num": 31
+    },
+    "216": {
+        "sub_date": 202008,
+        "user_age": "AGE_007",
+        "sub_num": 78
+    },
+    "217": {
+        "sub_date": 202007,
+        "user_age": "AGE_006",
+        "sub_num": 514
+    },
+    "218": {
+        "sub_date": 202008,
+        "user_age": "AGE_008",
+        "sub_num": 37864
+    },
+    "219": {
+        "sub_date": 202008,
+        "user_age": "AGE_008",
+        "sub_num": 6
+    },
+    "220": {
+        "sub_date": 202008,
+        "user_age": "AGE_002",
+        "sub_num": 8759
+    },
+    "221": {
+        "sub_date": 202007,
+        "user_age": "AGE_005",
+        "sub_num": 3165
+    },
+    "222": {
+        "sub_date": 202007,
+        "user_age": "AGE_008",
+        "sub_num": 58945
+    },
+    "223": {
+        "sub_date": 202007,
+        "user_age": "AGE_008",
+        "sub_num": 13
+    },
+    "224": {
+        "sub_date": 202009,
+        "user_age": "AGE_001",
+        "sub_num": 6744
+    },
+    "225": {
+        "sub_date": 202009,
+        "user_age": "AGE_001",
+        "sub_num": 6184
+    },
+    "226": {
+        "sub_date": 202009,
+        "user_age": "AGE_002",
+        "sub_num": 24093
+    },
+    "227": {
+        "sub_date": 202008,
+        "user_age": "AGE_008",
+        "sub_num": 29
+    },
+    "228": {
+        "sub_date": 202007,
+        "user_age": "AGE_006",
+        "sub_num": 949
+    },
+    "229": {
+        "sub_date": 202009,
+        "user_age": "AGE_002",
+        "sub_num": 21852
+    },
+    "230": {
+        "sub_date": 202009,
+        "user_age": "AGE_003",
+        "sub_num": 10151
+    },
+    "231": {
+        "sub_date": 202009,
+        "user_age": "AGE_003",
+        "sub_num": 11210
+    },
+    "232": {
+        "sub_date": 202009,
+        "user_age": "AGE_004",
+        "sub_num": 6907
+    },
+    "233": {
+        "sub_date": 202009,
+        "user_age": "AGE_005",
+        "sub_num": 3708
+    },
+    "234": {
+        "sub_date": 202009,
+        "user_age": "AGE_005",
+        "sub_num": 3344
+    },
+    "235": {
+        "sub_date": 202009,
+        "user_age": "AGE_006",
+        "sub_num": 631
+    },
+    "236": {
+        "sub_date": 202009,
+        "user_age": "AGE_007",
+        "sub_num": 80
+    },
+    "237": {
+        "sub_date": 202009,
+        "user_age": "AGE_006",
+        "sub_num": 995
+    },
+    "238": {
+        "sub_date": 202009,
+        "user_age": "AGE_007",
+        "sub_num": 143
+    },
+    "239": {
+        "sub_date": 202009,
+        "user_age": "AGE_008",
+        "sub_num": 66246
+    },
+    "240": {
+        "sub_date": 202009,
+        "user_age": "AGE_008",
+        "sub_num": 20
+    },
+    "241": {
+        "sub_date": 202009,
+        "user_age": "AGE_008",
+        "sub_num": 43
+    },
+    "242": {
+        "sub_date": 202010,
+        "user_age": "AGE_001",
+        "sub_num": 5132
+    },
+    "243": {
+        "sub_date": 202010,
+        "user_age": "AGE_001",
+        "sub_num": 5085
+    },
+    "244": {
+        "sub_date": 202010,
+        "user_age": "AGE_002",
+        "sub_num": 17681
+    },
+    "245": {
+        "sub_date": 202010,
+        "user_age": "AGE_002",
+        "sub_num": 15995
+    },
+    "246": {
+        "sub_date": 202010,
+        "user_age": "AGE_003",
+        "sub_num": 8506
+    },
+    "247": {
+        "sub_date": 202010,
+        "user_age": "AGE_003",
+        "sub_num": 9322
+    },
+    "248": {
+        "sub_date": 202009,
+        "user_age": "AGE_004",
+        "sub_num": 7146
+    },
+    "249": {
+        "sub_date": 202010,
+        "user_age": "AGE_004",
+        "sub_num": 6480
+    },
+    "250": {
+        "sub_date": 202010,
+        "user_age": "AGE_004",
+        "sub_num": 6671
+    },
+    "251": {
+        "sub_date": 202010,
+        "user_age": "AGE_005",
+        "sub_num": 3322
+    },
+    "252": {
+        "sub_date": 202010,
+        "user_age": "AGE_005",
+        "sub_num": 3186
+    },
+    "253": {
+        "sub_date": 202010,
+        "user_age": "AGE_006",
+        "sub_num": 954
+    },
+    "254": {
+        "sub_date": 202010,
+        "user_age": "AGE_007",
+        "sub_num": 60
+    },
+    "255": {
+        "sub_date": 202010,
+        "user_age": "AGE_006",
+        "sub_num": 591
+    },
+    "256": {
+        "sub_date": 202010,
+        "user_age": "AGE_008",
+        "sub_num": 105677
+    },
+    "257": {
+        "sub_date": 202010,
+        "user_age": "AGE_007",
+        "sub_num": 149
+    },
+    "258": {
+        "sub_date": 202010,
+        "user_age": "AGE_008",
+        "sub_num": 22
+    },
+    "259": {
+        "sub_date": 202010,
+        "user_age": "AGE_008",
+        "sub_num": 36
+    },
+    "260": {
+        "sub_date": 202011,
+        "user_age": "AGE_001",
+        "sub_num": 2509
+    },
+    "261": {
+        "sub_date": 202011,
+        "user_age": "AGE_001",
+        "sub_num": 2761
+    },
+    "262": {
+        "sub_date": 202011,
+        "user_age": "AGE_002",
+        "sub_num": 7206
+    },
+    "263": {
+        "sub_date": 202011,
+        "user_age": "AGE_002",
+        "sub_num": 6690
+    },
+    "264": {
+        "sub_date": 202011,
+        "user_age": "AGE_003",
+        "sub_num": 3802
+    },
+    "265": {
+        "sub_date": 202011,
+        "user_age": "AGE_003",
+        "sub_num": 2812
+    },
+    "266": {
+        "sub_date": 202011,
+        "user_age": "AGE_007",
+        "sub_num": 21
+    },
+    "267": {
+        "sub_date": 202011,
+        "user_age": "AGE_007",
+        "sub_num": 75
+    },
+    "268": {
+        "sub_date": 202011,
+        "user_age": "AGE_008",
+        "sub_num": 31556
+    },
+    "269": {
+        "sub_date": 202011,
+        "user_age": "AGE_008",
+        "sub_num": 10
+    },
+    "270": {
+        "sub_date": 202012,
+        "user_age": "AGE_001",
+        "sub_num": 2019
+    },
+    "271": {
+        "sub_date": 202012,
+        "user_age": "AGE_001",
+        "sub_num": 2485
+    },
+    "272": {
+        "sub_date": 202011,
+        "user_age": "AGE_008",
+        "sub_num": 4
+    },
+    "273": {
+        "sub_date": 202012,
+        "user_age": "AGE_002",
+        "sub_num": 2885
+    },
+    "274": {
+        "sub_date": 202011,
+        "user_age": "AGE_005",
+        "sub_num": 1065
+    },
+    "275": {
+        "sub_date": 202011,
+        "user_age": "AGE_004",
+        "sub_num": 2041
+    },
+    "276": {
+        "sub_date": 202011,
+        "user_age": "AGE_004",
+        "sub_num": 2495
+    },
+    "277": {
+        "sub_date": 202012,
+        "user_age": "AGE_002",
+        "sub_num": 3441
+    },
+    "278": {
+        "sub_date": 202012,
+        "user_age": "AGE_005",
+        "sub_num": 764
+    },
+    "279": {
+        "sub_date": 202012,
+        "user_age": "AGE_005",
+        "sub_num": 971
+    },
+    "280": {
+        "sub_date": 202012,
+        "user_age": "AGE_006",
+        "sub_num": 186
+    },
+    "281": {
+        "sub_date": 202011,
+        "user_age": "AGE_005",
+        "sub_num": 1312
+    },
+    "282": {
+        "sub_date": 202011,
+        "user_age": "AGE_006",
+        "sub_num": 232
+    },
+    "283": {
+        "sub_date": 202011,
+        "user_age": "AGE_006",
+        "sub_num": 442
+    },
+    "284": {
+        "sub_date": 202012,
+        "user_age": "AGE_003",
+        "sub_num": 2126
+    },
+    "285": {
+        "sub_date": 202012,
+        "user_age": "AGE_003",
+        "sub_num": 1559
+    },
+    "286": {
+        "sub_date": 202012,
+        "user_age": "AGE_004",
+        "sub_num": 1368
+    },
+    "287": {
+        "sub_date": 202012,
+        "user_age": "AGE_004",
+        "sub_num": 1696
+    },
+    "288": {
+        "sub_date": 202012,
+        "user_age": "AGE_006",
+        "sub_num": 387
+    },
+    "289": {
+        "sub_date": 202012,
+        "user_age": "AGE_007",
+        "sub_num": 55
+    },
+    "290": {
+        "sub_date": 202012,
+        "user_age": "AGE_008",
+        "sub_num": 4790
+    },
+    "291": {
+        "sub_date": 202012,
+        "user_age": "AGE_008",
+        "sub_num": 8
+    },
+    "292": {
+        "sub_date": 202012,
+        "user_age": "AGE_008",
+        "sub_num": 25
+    },
+    "293": {
+        "sub_date": 202101,
+        "user_age": "AGE_001",
+        "sub_num": 1253
+    },
+    "294": {
+        "sub_date": 202101,
+        "user_age": "AGE_001",
+        "sub_num": 1205
+    },
+    "295": {
+        "sub_date": 202101,
+        "user_age": "AGE_002",
+        "sub_num": 2697
+    },
+    "296": {
+        "sub_date": 202101,
+        "user_age": "AGE_002",
+        "sub_num": 3059
+    },
+    "297": {
+        "sub_date": 202101,
+        "user_age": "AGE_003",
+        "sub_num": 1374
+    },
+    "298": {
+        "sub_date": 202012,
+        "user_age": "AGE_007",
+        "sub_num": 23
+    },
+    "299": {
+        "sub_date": 202101,
+        "user_age": "AGE_003",
+        "sub_num": 1617
+    },
+    "300": {
+        "sub_date": 202101,
+        "user_age": "AGE_004",
+        "sub_num": 1266
+    },
+    "301": {
+        "sub_date": 202101,
+        "user_age": "AGE_004",
+        "sub_num": 931
+    },
+    "302": {
+        "sub_date": 202101,
+        "user_age": "AGE_005",
+        "sub_num": 498
+    },
+    "303": {
+        "sub_date": 202101,
+        "user_age": "AGE_005",
+        "sub_num": 689
+    },
+    "304": {
+        "sub_date": 202101,
+        "user_age": "AGE_006",
+        "sub_num": 147
+    },
+    "305": {
+        "sub_date": 202101,
+        "user_age": "AGE_006",
+        "sub_num": 243
+    },
+    "306": {
+        "sub_date": 202101,
+        "user_age": "AGE_007",
+        "sub_num": 23
+    },
+    "307": {
+        "sub_date": 202101,
+        "user_age": "AGE_007",
+        "sub_num": 46
+    },
+    "308": {
+        "sub_date": 202101,
+        "user_age": "AGE_008",
+        "sub_num": 3
+    },
+    "309": {
+        "sub_date": 202101,
+        "user_age": "AGE_008",
+        "sub_num": 23
+    },
+    "310": {
+        "sub_date": 201912,
+        "user_age": "AGE_002",
+        "sub_num": 3547
+    },
+    "311": {
+        "sub_date": 201912,
+        "user_age": "AGE_004",
+        "sub_num": 1290
+    },
+    "312": {
+        "sub_date": 201912,
+        "user_age": "AGE_005",
+        "sub_num": 265
+    },
+    "313": {
+        "sub_date": 201912,
+        "user_age": "AGE_005",
+        "sub_num": 574
+    },
+    "314": {
+        "sub_date": 201912,
+        "user_age": "AGE_006",
+        "sub_num": 46
+    },
+    "315": {
+        "sub_date": 201912,
+        "user_age": "AGE_006",
+        "sub_num": 173
+    },
+    "316": {
+        "sub_date": 201912,
+        "user_age": "AGE_007",
+        "sub_num": 6
+    },
+    "317": {
+        "sub_date": 201912,
+        "user_age": "AGE_008",
+        "sub_num": 3
+    },
+    "318": {
+        "sub_date": 201912,
+        "user_age": "AGE_008",
+        "sub_num": 10
+    },
+    "319": {
+        "sub_date": 202001,
+        "user_age": "AGE_001",
+        "sub_num": 1253
+    },
+    "320": {
+        "sub_date": 201912,
+        "user_age": "AGE_007",
+        "sub_num": 28
+    },
+    "321": {
+        "sub_date": 201912,
+        "user_age": "AGE_003",
+        "sub_num": 984
+    },
+    "322": {
+        "sub_date": 202001,
+        "user_age": "AGE_002",
+        "sub_num": 3688
+    },
+    "323": {
+        "sub_date": 202001,
+        "user_age": "AGE_002",
+        "sub_num": 2949
+    },
+    "324": {
+        "sub_date": 202001,
+        "user_age": "AGE_003",
+        "sub_num": 1810
+    },
+    "325": {
+        "sub_date": 201912,
+        "user_age": "AGE_001",
+        "sub_num": 2219
+    },
+    "326": {
+        "sub_date": 202001,
+        "user_age": "AGE_004",
+        "sub_num": 715
+    },
+    "327": {
+        "sub_date": 202001,
+        "user_age": "AGE_005",
+        "sub_num": 314
+    },
+    "328": {
+        "sub_date": 202001,
+        "user_age": "AGE_004",
+        "sub_num": 1216
+    },
+    "329": {
+        "sub_date": 201912,
+        "user_age": "AGE_003",
+        "sub_num": 1876
+    },
+    "330": {
+        "sub_date": 201912,
+        "user_age": "AGE_004",
+        "sub_num": 594
+    },
+    "331": {
+        "sub_date": 202001,
+        "user_age": "AGE_003",
+        "sub_num": 1140
+    },
+    "332": {
+        "sub_date": 202001,
+        "user_age": "AGE_001",
+        "sub_num": 1361
+    },
+    "333": {
+        "sub_date": 201912,
+        "user_age": "AGE_002",
+        "sub_num": 2403
+    },
+    "334": {
+        "sub_date": 201912,
+        "user_age": "AGE_001",
+        "sub_num": 1609
+    },
+    "335": {
+        "sub_date": 202001,
+        "user_age": "AGE_005",
+        "sub_num": 664
+    },
+    "336": {
+        "sub_date": 202001,
+        "user_age": "AGE_006",
+        "sub_num": 66
+    },
+    "337": {
+        "sub_date": 202001,
+        "user_age": "AGE_006",
+        "sub_num": 183
+    },
+    "338": {
+        "sub_date": 202001,
+        "user_age": "AGE_007",
+        "sub_num": 7
+    },
+    "339": {
+        "sub_date": 202001,
+        "user_age": "AGE_007",
+        "sub_num": 31
+    },
+    "340": {
+        "sub_date": 202001,
+        "user_age": "AGE_008",
+        "sub_num": 1
+    },
+    "341": {
+        "sub_date": 202001,
+        "user_age": "AGE_008",
+        "sub_num": 3
+    },
+    "342": {
+        "sub_date": 202001,
+        "user_age": "AGE_008",
+        "sub_num": 6
+    },
+    "343": {
+        "sub_date": 202002,
+        "user_age": "AGE_001",
+        "sub_num": 162
+    },
+    "344": {
+        "sub_date": 202002,
+        "user_age": "AGE_001",
+        "sub_num": 1513
+    },
+    "345": {
+        "sub_date": 202002,
+        "user_age": "AGE_001",
+        "sub_num": 1420
+    },
+    "346": {
+        "sub_date": 202002,
+        "user_age": "AGE_002",
+        "sub_num": 4494
+    },
+    "347": {
+        "sub_date": 202002,
+        "user_age": "AGE_002",
+        "sub_num": 4411
+    },
+    "348": {
+        "sub_date": 202002,
+        "user_age": "AGE_003",
+        "sub_num": 367
+    },
+    "349": {
+        "sub_date": 202002,
+        "user_age": "AGE_002",
+        "sub_num": 940
+    },
+    "350": {
+        "sub_date": 202002,
+        "user_age": "AGE_003",
+        "sub_num": 1511
+    },
+    "351": {
+        "sub_date": 202002,
+        "user_age": "AGE_004",
+        "sub_num": 315
+    },
+    "352": {
+        "sub_date": 202002,
+        "user_age": "AGE_003",
+        "sub_num": 2015
+    },
+    "353": {
+        "sub_date": 202002,
+        "user_age": "AGE_005",
+        "sub_num": 208
+    },
+    "354": {
+        "sub_date": 202002,
+        "user_age": "AGE_004",
+        "sub_num": 966
+    },
+    "355": {
+        "sub_date": 202002,
+        "user_age": "AGE_004",
+        "sub_num": 1349
+    },
+    "356": {
+        "sub_date": 202002,
+        "user_age": "AGE_007",
+        "sub_num": 31
+    },
+    "357": {
+        "sub_date": 202002,
+        "user_age": "AGE_008",
+        "sub_num": 65
+    },
+    "358": {
+        "sub_date": 202002,
+        "user_age": "AGE_008",
+        "sub_num": 12
+    },
+    "359": {
+        "sub_date": 202003,
+        "user_age": "AGE_001",
+        "sub_num": 10477
+    },
+    "360": {
+        "sub_date": 202003,
+        "user_age": "AGE_001",
+        "sub_num": 1909
+    },
+    "361": {
+        "sub_date": 202003,
+        "user_age": "AGE_001",
+        "sub_num": 1015
+    },
+    "362": {
+        "sub_date": 202003,
+        "user_age": "AGE_002",
+        "sub_num": 42021
+    },
+    "363": {
+        "sub_date": 202003,
+        "user_age": "AGE_002",
+        "sub_num": 5105
+    },
+    "364": {
+        "sub_date": 202003,
+        "user_age": "AGE_002",
+        "sub_num": 3060
+    },
+    "365": {
+        "sub_date": 202003,
+        "user_age": "AGE_003",
+        "sub_num": 13709
+    },
+    "366": {
+        "sub_date": 202003,
+        "user_age": "AGE_003",
+        "sub_num": 2030
+    },
+    "367": {
+        "sub_date": 202003,
+        "user_age": "AGE_003",
+        "sub_num": 1795
+    },
+    "368": {
+        "sub_date": 202002,
+        "user_age": "AGE_006",
+        "sub_num": 87
+    },
+    "369": {
+        "sub_date": 202003,
+        "user_age": "AGE_004",
+        "sub_num": 8680
+    },
+    "370": {
+        "sub_date": 202003,
+        "user_age": "AGE_004",
+        "sub_num": 1460
+    },
+    "371": {
+        "sub_date": 202003,
+        "user_age": "AGE_005",
+        "sub_num": 4249
+    },
+    "372": {
+        "sub_date": 202003,
+        "user_age": "AGE_004",
+        "sub_num": 1867
+    },
+    "373": {
+        "sub_date": 202003,
+        "user_age": "AGE_005",
+        "sub_num": 637
+    },
+    "374": {
+        "sub_date": 202002,
+        "user_age": "AGE_005",
+        "sub_num": 441
+    },
+    "375": {
+        "sub_date": 202002,
+        "user_age": "AGE_005",
+        "sub_num": 685
+    },
+    "376": {
+        "sub_date": 202002,
+        "user_age": "AGE_006",
+        "sub_num": 45
+    },
+    "377": {
+        "sub_date": 202002,
+        "user_age": "AGE_007",
+        "sub_num": 6
+    },
+    "378": {
+        "sub_date": 202003,
+        "user_age": "AGE_005",
+        "sub_num": 673
+    },
+    "379": {
+        "sub_date": 202003,
+        "user_age": "AGE_006",
+        "sub_num": 878
+    },
+    "380": {
+        "sub_date": 202003,
+        "user_age": "AGE_006",
+        "sub_num": 177
+    },
+    "381": {
+        "sub_date": 202003,
+        "user_age": "AGE_006",
+        "sub_num": 84
+    },
+    "382": {
+        "sub_date": 202002,
+        "user_age": "AGE_007",
+        "sub_num": 10
+    },
+    "383": {
+        "sub_date": 202003,
+        "user_age": "AGE_007",
+        "sub_num": 111
+    },
+    "384": {
+        "sub_date": 202003,
+        "user_age": "AGE_007",
+        "sub_num": 30
+    },
+    "385": {
+        "sub_date": 202003,
+        "user_age": "AGE_007",
+        "sub_num": 17
+    },
+    "386": {
+        "sub_date": 202003,
+        "user_age": "AGE_008",
+        "sub_num": 3
+    },
+    "387": {
+        "sub_date": 202003,
+        "user_age": "AGE_008",
+        "sub_num": 53
+    },
+    "388": {
+        "sub_date": 202004,
+        "user_age": "AGE_001",
+        "sub_num": 1444
+    },
+    "389": {
+        "sub_date": 202003,
+        "user_age": "AGE_008",
+        "sub_num": 6
+    },
+    "390": {
+        "sub_date": 202002,
+        "user_age": "AGE_006",
+        "sub_num": 193
+    },
+    "391": {
+        "sub_date": 202004,
+        "user_age": "AGE_001",
+        "sub_num": 997
+    },
+    "392": {
+        "sub_date": 202004,
+        "user_age": "AGE_003",
+        "sub_num": 2128
+    },
+    "393": {
+        "sub_date": 202004,
+        "user_age": "AGE_004",
+        "sub_num": 13880
+    },
+    "394": {
+        "sub_date": 202004,
+        "user_age": "AGE_004",
+        "sub_num": 2033
+    },
+    "395": {
+        "sub_date": 202004,
+        "user_age": "AGE_004",
+        "sub_num": 1889
+    },
+    "396": {
+        "sub_date": 202004,
+        "user_age": "AGE_005",
+        "sub_num": 6341
+    },
+    "397": {
+        "sub_date": 202004,
+        "user_age": "AGE_005",
+        "sub_num": 622
+    },
+    "398": {
+        "sub_date": 202004,
+        "user_age": "AGE_005",
+        "sub_num": 751
+    },
+    "399": {
+        "sub_date": 202004,
+        "user_age": "AGE_002",
+        "sub_num": 2899
+    },
+    "400": {
+        "sub_date": 202004,
+        "user_age": "AGE_002",
+        "sub_num": 4029
+    },
+    "401": {
+        "sub_date": 202004,
+        "user_age": "AGE_003",
+        "sub_num": 2181
+    },
+    "402": {
+        "sub_date": 202004,
+        "user_age": "AGE_007",
+        "sub_num": 12
+    },
+    "403": {
+        "sub_date": 202004,
+        "user_age": "AGE_007",
+        "sub_num": 30
+    },
+    "404": {
+        "sub_date": 202004,
+        "user_age": "AGE_008",
+        "sub_num": 108
+    },
+    "405": {
+        "sub_date": 202004,
+        "user_age": "AGE_008",
+        "sub_num": 7
+    },
+    "406": {
+        "sub_date": 202004,
+        "user_age": "AGE_008",
+        "sub_num": 5
+    },
+    "407": {
+        "sub_date": 202004,
+        "user_age": "AGE_003",
+        "sub_num": 22010
+    },
+    "408": {
+        "sub_date": 202004,
+        "user_age": "AGE_006",
+        "sub_num": 106
+    },
+    "409": {
+        "sub_date": 202004,
+        "user_age": "AGE_006",
+        "sub_num": 1382
+    },
+    "410": {
+        "sub_date": 202004,
+        "user_age": "AGE_006",
+        "sub_num": 199
+    },
+    "411": {
+        "sub_date": 202004,
+        "user_age": "AGE_007",
+        "sub_num": 189
+    },
+    "412": {
+        "sub_date": 202005,
+        "user_age": "AGE_001",
+        "sub_num": 13906
+    },
+    "413": {
+        "sub_date": 202004,
+        "user_age": "AGE_001",
+        "sub_num": 13094
+    },
+    "414": {
+        "sub_date": 202004,
+        "user_age": "AGE_002",
+        "sub_num": 55120
+    },
+    "415": {
+        "sub_date": 202005,
+        "user_age": "AGE_001",
+        "sub_num": 5
+    },
+    "416": {
+        "sub_date": 202005,
+        "user_age": "AGE_001",
+        "sub_num": 14
+    },
+    "417": {
+        "sub_date": 202005,
+        "user_age": "AGE_002",
+        "sub_num": 59964
+    },
+    "418": {
+        "sub_date": 202005,
+        "user_age": "AGE_002",
+        "sub_num": 50
+    },
+    "419": {
+        "sub_date": 202005,
+        "user_age": "AGE_003",
+        "sub_num": 26432
+    },
+    "420": {
+        "sub_date": 202005,
+        "user_age": "AGE_002",
+        "sub_num": 109
+    },
+    "421": {
+        "sub_date": 202005,
+        "user_age": "AGE_003",
+        "sub_num": 23
+    },
+    "422": {
+        "sub_date": 202005,
+        "user_age": "AGE_003",
+        "sub_num": 40
+    },
+    "423": {
+        "sub_date": 202005,
+        "user_age": "AGE_004",
+        "sub_num": 16808
+    },
+    "424": {
+        "sub_date": 202005,
+        "user_age": "AGE_005",
+        "sub_num": 9
+    },
+    "425": {
+        "sub_date": 202005,
+        "user_age": "AGE_007",
+        "sub_num": 244
+    },
+    "426": {
+        "sub_date": 202005,
+        "user_age": "AGE_008",
+        "sub_num": 914
+    },
+    "427": {
+        "sub_date": 202005,
+        "user_age": "AGE_005",
+        "sub_num": 16
+    },
+    "428": {
+        "sub_date": 202005,
+        "user_age": "AGE_006",
+        "sub_num": 1604
+    },
+    "429": {
+        "sub_date": 202005,
+        "user_age": "AGE_006",
+        "sub_num": 4
+    },
+    "430": {
+        "sub_date": 202005,
+        "user_age": "AGE_006",
+        "sub_num": 4
+    },
+    "431": {
+        "sub_date": 202005,
+        "user_age": "AGE_004",
+        "sub_num": 27
+    },
+    "432": {
+        "sub_date": 202005,
+        "user_age": "AGE_004",
+        "sub_num": 15
+    },
+    "433": {
+        "sub_date": 202005,
+        "user_age": "AGE_005",
+        "sub_num": 7346
+    },
+    "434": {
+        "sub_date": 202005,
+        "user_age": "AGE_008",
+        "sub_num": 1
+    },
+    "435": {
+        "sub_date": 202006,
+        "user_age": "AGE_001",
+        "sub_num": 412
+    },
+    "436": {
+        "sub_date": 202006,
+        "user_age": "AGE_001",
+        "sub_num": 5382
+    },
+    "437": {
+        "sub_date": 202006,
+        "user_age": "AGE_002",
+        "sub_num": 2074
+    },
+    "438": {
+        "sub_date": 202006,
+        "user_age": "AGE_002",
+        "sub_num": 22086
+    },
+    "439": {
+        "sub_date": 202006,
+        "user_age": "AGE_002",
+        "sub_num": 21507
+    },
+    "440": {
+        "sub_date": 202006,
+        "user_age": "AGE_003",
+        "sub_num": 883
+    },
+    "441": {
+        "sub_date": 202006,
+        "user_age": "AGE_003",
+        "sub_num": 9602
+    },
+    "442": {
+        "sub_date": 202006,
+        "user_age": "AGE_003",
+        "sub_num": 11835
+    },
+    "443": {
+        "sub_date": 202006,
+        "user_age": "AGE_004",
+        "sub_num": 523
+    },
+    "444": {
+        "sub_date": 202006,
+        "user_age": "AGE_001",
+        "sub_num": 5185
+    },
+    "445": {
+        "sub_date": 202006,
+        "user_age": "AGE_005",
+        "sub_num": 260
+    },
+    "446": {
+        "sub_date": 202006,
+        "user_age": "AGE_005",
+        "sub_num": 3356
+    },
+    "447": {
+        "sub_date": 202006,
+        "user_age": "AGE_006",
+        "sub_num": 75
+    },
+    "448": {
+        "sub_date": 202006,
+        "user_age": "AGE_006",
+        "sub_num": 559
+    },
+    "449": {
+        "sub_date": 202006,
+        "user_age": "AGE_006",
+        "sub_num": 952
+    },
+    "450": {
+        "sub_date": 202006,
+        "user_age": "AGE_007",
+        "sub_num": 12
+    },
+    "451": {
+        "sub_date": 202006,
+        "user_age": "AGE_007",
+        "sub_num": 46
+    },
+    "452": {
+        "sub_date": 202006,
+        "user_age": "AGE_007",
+        "sub_num": 136
+    },
+    "453": {
+        "sub_date": 202006,
+        "user_age": "AGE_008",
+        "sub_num": 9191
+    },
+    "454": {
+        "sub_date": 202006,
+        "user_age": "AGE_008",
+        "sub_num": 16
+    },
+    "455": {
+        "sub_date": 202006,
+        "user_age": "AGE_008",
+        "sub_num": 36
+    },
+    "456": {
+        "sub_date": 202006,
+        "user_age": "AGE_005",
+        "sub_num": 2896
+    },
+    "457": {
+        "sub_date": 202006,
+        "user_age": "AGE_004",
+        "sub_num": 5936
+    },
+    "458": {
+        "sub_date": 202006,
+        "user_age": "AGE_004",
+        "sub_num": 7221
+    }
+}
