@@ -1,7 +1,21 @@
 # Ttareungi
-발표시 추가
-데이터 선택이유
-데이터 세부사항
+Ttareungi is an unmanned rental system that can be easily and conveniently used by anyone, anytime, anywhere in Seoul.
+
+The service first started 6 years ago and is still actively used. 
+
+In particular, the usage rate was expected to increase further after the Corona crisis(크라이시스), so continuous analysis and coordination of rental stations and bicycle arrangements will be essential. 
+
+This is why we decided to make interesting visualizations that can help the deployment of Ttareungi through related data.
+
+## Dataset
+Sources : 서울 열린데이터 광장
+
+![image](https://user-images.githubusercontent.com/55476302/122060049-30f04b00-ce28-11eb-9b5a-af6cd1fa188e.png)
+![image](https://user-images.githubusercontent.com/55476302/122060078-39e11c80-ce28-11eb-884a-bc77c152c758.png)
+![image](https://user-images.githubusercontent.com/55476302/122060112-41a0c100-ce28-11eb-8e16-b20a19dd5a22.png)
+![image](https://user-images.githubusercontent.com/55476302/122060147-49606580-ce28-11eb-8022-531bfcec48c2.png)
+
+
 
 ## 도커를 통한 최적화 적용
 docker pull mongo
